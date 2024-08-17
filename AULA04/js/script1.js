@@ -4,13 +4,13 @@ document.getElementById("fotos").innerHTML +="<img src=IMG/FOTO"+i+".jpg>"
 }
 
 for(let i =1; i <= 6 ; i++){
-  document.getElementById("select_foto").innerHTML+="<option value=FOTO"+ i+ "> FOTO"+i+"</option>"
+  document.getElementById("select_foto").innerHTML+="<option value=FOTO"+ i+ ">  FOTO"+i+"</option>"
 }
 function abrirFOTO()
 {
  let foto= document.getElementById("select_foto")   
 
- 
+
  //vamos Abrir uma nova guia no navegador 
  //O primeiro parâmetro do comando window.open é a url
  //, ou seja , a página que será aberta. No nosso caso ,passamos 

@@ -25,3 +25,9 @@ function mediaArray(array){
     
     }
     
+
+
+    function media2(array,qtd){
+        return somaArray(array) /array.length;
+
+    }

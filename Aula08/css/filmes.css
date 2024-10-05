@@ -1,0 +1,143 @@
+@font-face {
+    font-family: "anton";
+    src: url(./fonts/Anton-Regular.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+div#lista {
+
+
+    display: flex;
+
+    width: 70%;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 10px;
+    flex-wrap: wrap;
+    border: 1px solid black;
+    background-color: rgb(250, 215, 238);
+}
+
+.filme {
+    width: 17.6%;
+    margin: 10px;
+
+    border-radius: 10px;
+    border: 1px solid rgb(54, 53, 53);
+    box-shadow: 0 0 10px #ccc;
+    transition: ease 1s;
+    cursor: pointer;
+    background-color: #fff;
+
+}
+
+.filme img {
+
+    width: 100%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+
+}
+
+.filme:hover {
+
+
+    transform: scale(1.2);
+    z-index: 10000;
+
+}
+
+.votos {
+    background-color: rgb(0, 107, 107);
+    border: 1px solid rgb(144, 206, 192, 21);
+    color: #fff;
+    font-family: arial;
+    width: 45px;
+    height: 45px;
+    font-weight: bold;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 10pt;
+    position: relative;
+    left: 10px;
+    top: -27px
+}
+
+h2 {
+    text-align: center;
+    font-family: "anton";
+    font-size: 11.9pt;
+    font-weight: bold;
+    margin: 10px
+}
+
+.lancamento {
+    text-align: center;
+    font-family: "playwrite";
+    font-size: 13pt
+}
+
+
+#info {
+
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.8);
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: none;
+    z-index: 11000;
+
+
+
+}
+
+#info-filme {
+
+    width: 800px;
+    height: 600px;
+    background-color: #F0F8FF;
+    display: flex;
+}
+
+#fechar {
+    text-decoration: none;
+    color: black;
+    font-size: 20pt;
+    font-weight: bold;
+    position: relative;
+    left: 760px;
+    top: 10px;
+    width: 50px;
+    height: 50px;
+}
+
+#poster,
+#detalhe {
+    flex: 1;
+
+}
+
+#poster img {
+    width: 100%;
+    padding-top: 25px;
+}
+
+#detalhe {
+
+    padding-top: 50px;
+    padding-right: 20px;
+    padding-left: 20px;
+}

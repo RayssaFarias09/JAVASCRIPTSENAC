@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Cadastro de Clientes </title>
 
 <link rel="stylesheet" href="css/bootstrap.min.css">
 <link rel="stylesheet" href="css/style.css">
@@ -13,10 +13,10 @@
     <div class="container ">
     <h1> Gerenciar Clientes </h1>
     <hr> 
-    <a href="#" class="btn btn-info"  data-bs-toggle="modal" data-bs-target="#exampleModal">Cadastrar Cliente</a>
+    <a href="#" id="btncadastrar" class="btn btn-info"  data-bs-toggle="modal" data-bs-target="#exampleModal">Cadastrar Cliente</a>
     <hr>
     <h4> Clientes cadastrados</h4>
-<div id="lista"></div>
+<div id="lista" class="containner row"> </div>
 
 
 
@@ -27,7 +27,7 @@
 
 <!-- Inicio do modal -->
 
-<div class="modal fade modal-dialog modal-dialog-centered" tabindex="-1" id="exampleModal">
+<div class="modal fade " tabindex="-1" id="exampleModal">
     <div class="modal-dialog">
       <div class="modal-content">
         <div class="modal-header">
@@ -51,6 +51,7 @@
         <div class="modal-footer">
           <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
           <button type="button" class="btn btn-primary" id ="Salvar">salvar</button>
+          <button type="button" class="btn btn-success" id ="btnatualizar">Atualizar</button>
         </div>
       </div>
     </div>
